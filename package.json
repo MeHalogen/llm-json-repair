@@ -1,0 +1,42 @@
+{
+  "name": "llm-json-repair",
+  "version": "1.0.0",
+  "description": "Zero-dependency parser to strip comments/trailing commas and repair incomplete/truncated JSON output from LLMs.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "bin": {
+    "llm-json-repair": "./dist/cli.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "keywords": [
+    "json",
+    "repair",
+    "parser",
+    "llm",
+    "comments",
+    "trailing-comma",
+    "truncated",
+    "vibe-coding"
+  ],
+  "author": "Antigravity Factory Manager",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^5.8.0",
+    "vitest": "^3.2.0"
+  }
+}
